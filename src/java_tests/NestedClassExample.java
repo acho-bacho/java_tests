@@ -29,7 +29,8 @@ public class NestedClassExample
 		NestedClassExample.InnerClass inner = nce.new InnerClass();
 		
 		inner.print();
-
+		
+		//changes
 	}
 
 }
