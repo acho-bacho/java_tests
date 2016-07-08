@@ -2,7 +2,7 @@ package java_tests;
 
 public class ArrayTest
 {
-	static int[][] m_Array = new int[5][10];
+	public static int[][] m_Array = new int[5][10];
 	
 	public static void main(String[] args)
 	{

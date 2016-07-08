@@ -1,6 +1,6 @@
 package java_tests;
 
-public class HelloWorldAnonymousClasses
+public class AnonymousClass
 {
 
 	interface HelloWorld
@@ -62,6 +62,7 @@ public class HelloWorldAnonymousClasses
 				System.out.println("Hola, " + name);
 			}
 		};
+		
 		englishGreeting.greet();
 		frenchGreeting.greetSomeone("Fred");
 		spanishGreeting.greet();
@@ -69,7 +70,7 @@ public class HelloWorldAnonymousClasses
 
 	public static void main(String... args)
 	{
-		HelloWorldAnonymousClasses myApp = new HelloWorldAnonymousClasses();
+		AnonymousClass myApp = new AnonymousClass();
 		myApp.sayHello();
 	}
 }
