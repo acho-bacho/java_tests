@@ -40,7 +40,7 @@ public class LocalClassSimpleExample
 		Tester aTest = new Tester();
 		
 		MyInterface iter = aTest.iterator();
-		
+	
 		iter.print();
 	}
 }
