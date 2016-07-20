@@ -10,10 +10,7 @@ public class CallableDemo
 {
 	public static void main(String[] args)
 	{
-		for (int i = 0; i < 3; i--)
-		{
-			System.out.println(i);
-		}
+		
 		Callable<Integer> task = () ->
 		{
 			try
@@ -35,8 +32,7 @@ public class CallableDemo
 		Integer result = null;
 		try
 		{
-			result = future.get(); // blocks the current thread and waits until
-									// the callable completes
+			result = future.get(); // blocks the current thread and waits until the callable completes
 			// result = future.get(2, TimeUnit.SECONDS);
 		}
 		catch (Exception e2)

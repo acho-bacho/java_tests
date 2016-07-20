@@ -2,18 +2,20 @@ package java_tests;
 
 public class NestedClassExample
 {
+	static int statInt = 11;
+	int instInt = 22;
     static class StaticNestedClass 
     {
         public void print()
         {
-        	System.out.println("static nested");
+        	System.out.println("static nested " + statInt);
         }
     }
     class InnerClass 
     {
     	public void print()
         {
-        	System.out.println("inner");
+        	System.out.println("inner " + NestedClassExample.this.instInt);
         }
     }
     
