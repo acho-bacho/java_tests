@@ -55,25 +55,11 @@ public class Simple extends Parent
 	public static void main(String[] args)
 	{
 	
-		double total = 0;
-		for (int i = 0; i < 50; i++)
-		{
-			total += 0.1;
-		}
-		System.out.println(total);
-		try
-		{
-			Simple s = null;
-			
-			s = new Simple(1);
-			s.m();
-			System.out.println(s.sf);
-			
-		} 
-		finally
-		{
-			System.out.println("FINALLY");
-		}
+		String s3 = "JournalDev";
+		int start = 1;
+		char end = 5;
+		System.out.println(start + end);
+		System.out.println(s3.substring(start, end));
 	}
 
 }

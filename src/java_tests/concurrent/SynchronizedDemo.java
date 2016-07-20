@@ -41,9 +41,9 @@ public class SynchronizedDemo
 
 		ExecutorService executor = Executors.newFixedThreadPool(2);
 
-		// IntStream.range(0, 10000).forEach(i -> executor.submit(demo::increment));
-		//IntStream.range(0, 10000).forEach(i -> executor.submit(demo::incrementSync));
-		IntStream.range(0, 10000).forEach(i -> executor.submit(demo::incrementWithLock));
+		 //IntStream.range(0, 10000).forEach(i -> executor.submit(demo::increment));
+		IntStream.range(0, 10000).forEach(i -> executor.submit(demo::incrementSync));
+		//IntStream.range(0, 10000).forEach(i -> executor.submit(demo::incrementWithLock));
 		ConcurrentUtils.stop(executor);
 
 		System.out.println(demo.count); // 9965
