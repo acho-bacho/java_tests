@@ -1,4 +1,4 @@
-package strings;
+package algorithms.string;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

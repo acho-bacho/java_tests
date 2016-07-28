@@ -3,7 +3,6 @@ package java_basics;
 
 public class LocalClass
 {
-
 }
 
 class A

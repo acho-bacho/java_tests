@@ -1,4 +1,4 @@
-package java_basics;
+package java_basics.generics;
 
 
 class Queue<E>

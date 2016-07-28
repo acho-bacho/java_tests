@@ -1,4 +1,4 @@
-package java_basics;
+package datastructures;
 
 public class Stack
 {

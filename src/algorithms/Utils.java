@@ -32,15 +32,23 @@ public class Utils
 		return Arrays.stream(array).max().getAsInt();
 	}
 
-	public static String getLine()
+	public static String getLine(String... args)
 	{
-
+		String msg="";
+		if(args.length==0)
+		{
+			msg = "Enter string:";
+		}
+		else
+		{
+			msg = args[0];
+		}
 		String line = null;
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
 		try
 		{
-			System.out.println("Enter string:");
+			System.out.println(msg);
 			line = in.readLine();
 		}
 		catch (Exception e)

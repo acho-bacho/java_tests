@@ -8,12 +8,15 @@ public class InitDemo
 	int int2;
 	static String string1Static;
 	String string2;
+	boolean bool;
+	static boolean staticBool;
 
 	static
 	{
 		System.out.println("[class] double1Static = " + double1Static);
 		System.out.println("[class] int1Static = " + int1Static);
 		System.out.println("[class] string1Static = " + string1Static);
+		System.out.println("[class] staticBool = " + staticBool);
 		System.out.println();
 	}
 
@@ -21,6 +24,7 @@ public class InitDemo
 		System.out.println("[instance] double2 = " + double2);
 		System.out.println("[instance] int2 = " + int2);
 		System.out.println("[instance] string2 = " + string2);
+		System.out.println("[instance] bool = " + bool);
 		System.out.println();
 	}
 
@@ -29,17 +33,19 @@ public class InitDemo
 		double1Static = 1.0;
 		int1Static = 1000000000;
 		string1Static = "abc";
+		staticBool = true;
 	}
 
 	{
 		double2 = 1.0;
 		int2 = 1000000000;
 		string2 = "abc";
+		bool = true;
 	}
 
 	InitDemo()
 	{
-		System.out.println("InitDemo() called");
+		System.out.println("InitDemo() constructor called");
 		System.out.println();
 	}
 
@@ -53,7 +59,7 @@ public class InitDemo
 	}
 
 	{
-		System.out.println("[instance] double4 = " + double3Static);
+		System.out.println("[instance] double4 = " + double4);
 		System.out.println();
 	}
 

@@ -68,19 +68,12 @@ public class QuickSort
 
 	public static void main(String[] args)
 	{
-		String line = null;
-		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+	
+		
 		while (true)
 		{
-			try
-			{
-				System.out.println("Enter comma delimited array:");
-				line = in.readLine();
-			} catch (Exception e)
-			{
-				System.out.println("Error reading");
-			}
-
+			String line = Utils.getLine("Enter comma delimited array:");
+		
 			int[] unsorted = Utils.stringToIntArray(line);
 
 			QuickSort quickSorter = new QuickSort();

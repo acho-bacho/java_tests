@@ -1,4 +1,4 @@
-package strings;
+package algorithms.string;
 
 import algorithms.Utils;
 
