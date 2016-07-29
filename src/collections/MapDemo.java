@@ -1,4 +1,4 @@
-package java_tests.collections;
+package collections;
 
 import java.util.Map;
 import java.util.TreeMap;
