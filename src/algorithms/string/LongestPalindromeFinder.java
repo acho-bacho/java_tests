@@ -1,6 +1,6 @@
 package algorithms.string;
 
-import algorithms.Utils;
+import algorithms.sorting.Utils;
 
 public class LongestPalindromeFinder
 {

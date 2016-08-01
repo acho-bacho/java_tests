@@ -1,25 +1,28 @@
-package algorithms;
+package algorithms.sorting;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class InsertionSort
+public class SelectionSort
 {
 	public static int[] sort(int[] unsorted)
 	{
 		int[] result = unsorted.clone();
 
-		for (int i = 1; i < result.length; i++)
+		for (int i = 0; i < result.length-1; i++)
 		{
-			int valueToSort = result[i];
-			int j = i;
-			while (j > 0 && result[j - 1] > valueToSort)
+			int minPos = i; //position of minimum element
+			for (int j = i+1; j < result.length; j++)
 			{
-				result[j] = result[j - 1];
-				j--;
+				if(result[j]<result[minPos])
+				{
+					minPos=j;
+				}
 			}
-			result[j] = valueToSort;
+			int smallest = result[minPos];
+			result[minPos] = result[i];
+			result[i] = smallest;
 		}
 
 		return result;
@@ -41,9 +44,9 @@ public class InsertionSort
 			}
 
 			int[] unsorted = Utils.stringToIntArray(line);
-			int[] sorted = InsertionSort.sort(unsorted);
+			int[] sorted = SelectionSort.sort(unsorted);
 
-			System.out.println("sorted: " + Arrays.toString(sorted));
+			System.out.println("SelectionSort sorted: " + Arrays.toString(sorted));
 		}
 	}
 

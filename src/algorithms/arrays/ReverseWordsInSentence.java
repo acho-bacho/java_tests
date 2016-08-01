@@ -2,7 +2,7 @@ package algorithms.arrays;
 
 import java.util.Arrays;
 
-import algorithms.Utils;
+import algorithms.sorting.Utils;
 
 public class ReverseWordsInSentence
 {

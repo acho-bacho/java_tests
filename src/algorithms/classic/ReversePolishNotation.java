@@ -2,7 +2,7 @@ package algorithms.classic;
 
 import java.util.Stack;
 
-import algorithms.Utils;
+import algorithms.sorting.Utils;
 
 
 public class ReversePolishNotation
